@@ -1,5 +1,7 @@
 # Strong solidity of the `{7, 3}` hyperbolic circle packing
 
+The paper: https://doi.org/10.5281/zenodo.24569387
+
 ## What is in this repository?
 
 - The [Lean directory](lean/) contains the statements, proofs, and verification instructions for L. Fejes Tóth’s 1979 strong-solidity conjecture for `{7, 3}` (Theorem 1.1, Corollary 1.2, and all supporting results).
