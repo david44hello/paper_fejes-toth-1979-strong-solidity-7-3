@@ -1,0 +1,44 @@
+claim_id	paper_ref	lean_decl	status
+thm_1_1	Theorem 1.1 (Strong solidity of {7, 3})	FejesTothP7.Paper.thm_1_1_strong_solidity	proved
+cor_1_2	Corollary 1.2 (Grade g_7 = 3 and order k_7 = 1)	FejesTothP7.Paper.cor_1_2_grade_and_order	proved
+text_1_order1	Section 1 (strong solidity <-> order 1)	FejesTothP7.Paper.text_1_strong_solidity_iff_order_one	proved
+text_1_gap	Section 1 & Fig 2 caption (Delta_p < 0, |h_p - rho*_p| < r_p for p >= 8)	FejesTothP7.Paper.text_1_metric_gap_p_ge_8	proved
+fig_2_regime	Fig 2 caption (7<=p<=14, h_14=rho*_14, p>=15)	FejesTothP7.Paper.fig_2_caption_regime_split	proved
+fig_2_delta7	Fig 2 caption (Delta_7 = 0)	FejesTothP7.Paper.fig_2_delta7_zero	proved
+bridge_pack	Section 2.1 (open-disc packing equivalence)	FejesTothP7.Paper.isPacking_iff_pairwise_disjoint_balls	proved
+bridge_ov	Section 2.1 (open-disc overlap equivalence)	FejesTothP7.Paper.overlaps_iff_balls_inter_nonempty	proved
+cert_37	Section 2.1 ({7, 3}/{3, 7} tiling certification)	FejesTothP7.Paper.sites37_tiling_certification	proved
+eq_1	Equation (1) (hyperbolic constants)	FejesTothP7.Paper.eq_1_consts	proved
+eq_2	Equation (2) (r < R_c < h < 2r)	FejesTothP7.Paper.eq_2_order	proved
+text_2_beta	Section 2.1 (properties of beta and rho*)	FejesTothP7.Paper.text_2_beta_properties	proved
+text_2_num	Section 2.1 (5-decimal numerical bounds on 2r, h, R_c, rho*)	FejesTothP7.Paper.text_2_numerical_bounds	proved
+lem_2_1	Lemma 2.1 (trivial rearrangement iff X subseteq sites37)	FejesTothP7.Paper.lem_2_1_trivial_rearrangement	proved
+lem_2_2	Lemma 2.2 (Polar Lemma)	FejesTothP7.Paper.lem_2_2_polar	proved
+lem_2_3a	Lemma 2.3(a) (Free-Arc Lemma, part a)	FejesTothP7.Paper.lem_2_3_freearc_a	proved
+lem_2_3b	Lemma 2.3(b) (Free-Arc Lemma, part b)	FejesTothP7.Paper.lem_2_3_freearc_b	proved
+lem_2_3c	Lemma 2.3(c) (Free-Arc Lemma, part c)	FejesTothP7.Paper.lem_2_3_freearc_c	proved
+lem_2_3d	Lemma 2.3(d) (Free-Arc Lemma, part d)	FejesTothP7.Paper.lem_2_3_freearc_d	proved
+lem_2_3d_c	Lemma 2.3(d) consequence (two overlappers -> not centered)	FejesTothP7.Paper.lem_2_3_freearc_d_conseq	proved
+lem_2_4	Lemma 2.4 (Edge Lemma)	FejesTothP7.Paper.lem_2_4_edge	proved
+lem_2_4_c	Lemma 2.4 consequence (at most one overlapper per edge)	FejesTothP7.Paper.lem_2_4_edge_conseq	proved
+lem_2_5	Lemma 2.5 (Reuleaux-Triangle Lemma)	FejesTothP7.Paper.lem_2_5_reuleaux	proved
+prop_3_1	Proposition 3.1 (exact identity h = r + rho*)	FejesTothP7.Paper.prop_3_1_exact_identity	proved
+eq_6	Equation (6) (minimal cubic for 2 cos(pi/7))	FejesTothP7.Paper.eq_6_lambda7_cubic	proved
+eq_5	Section 3.1 & Equation (5) (tip distances)	FejesTothP7.Paper.eq_5_tip_distances	proved
+lem_3_2	Lemma 3.2 (Tip-Disc Lemma)	FejesTothP7.Paper.lem_3_2_tip_disc	proved
+lem_3_3	Lemma 3.3 (Strict Half-Lens Bound)	FejesTothP7.Paper.lem_3_3_half_lens	proved
+lem_4_1	Lemma 4.1 (Bridge and Deletion Remarks)	FejesTothP7.Paper.lem_4_1_bridge	proved
+rem_4_2	Remark 4.2 (tau_3 Edge-Count)	FejesTothP7.Paper.rem_4_2_tau3_edge_count	proved
+lem_4_3	Lemma 4.3 (joining with <= 2 unfixed neighbors)	FejesTothP7.Paper.lem_4_3_join_le_two	proved
+lem_4_4	Lemma 4.4 (profile-tau_3 joining lemma)	FejesTothP7.Paper.lem_4_4_join_tau3	proved
+lem_4_5_s1	Lemma 4.5 Step 1 (edge counts)	FejesTothP7.Paper.lem_4_5_step1_edge_counts	proved
+lem_4_5_s2	Lemma 4.5 Step 2 (W overlaps c_5)	FejesTothP7.Paper.lem_4_5_step2_W_overlaps_c5	proved
+lem_4_5_s3	Lemma 4.5 Step 3 (E overlaps c_2)	FejesTothP7.Paper.lem_4_5_step3_E_overlaps_c2	proved
+lem_4_5_s4	Lemma 4.5 Step 4 (W = E)	FejesTothP7.Paper.lem_4_5_step4_W_eq_E	proved
+lem_4_5_s5	Lemma 4.5 Step 5 (contradiction at c_3)	FejesTothP7.Paper.lem_4_5_step5_contradiction_at_c3	proved
+lem_4_5	Lemma 4.5 (nine-site closing lemma)	FejesTothP7.Paper.lem_4_5_nine_site	proved
+lem_5_1	Lemma 5.1 (Zone Substitution Lemma, incl. P_m & sigma^2)	FejesTothP7.Paper.lem_5_1_zone_substitution	proved
+step_z1	Theorem 1.1 Step: Zone Z_1	FejesTothP7.Paper.thm_1_1_step_zone1	proved
+step_z2	Theorem 1.1 Step: Zone Z_2	FejesTothP7.Paper.thm_1_1_step_zone2	proved
+step_zm	Theorem 1.1 Step: Zone Z_m (m >= 1)	FejesTothP7.Paper.thm_1_1_step_zone_m	proved
+step_cor	Corollary 1.2 Step: rho* < r < R_c < h < 2r	FejesTothP7.Paper.cor_1_2_step_order_chain	proved

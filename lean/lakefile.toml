@@ -1,0 +1,16 @@
+# FejesTothP7Lean — Formalization of strong solidity of the {7,3} circle packing.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
+name = "FejesTothP7Lean"
+version = "0.1.0"
+defaultTargets = ["FejesTothP7"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.35.0"
+
+[[lean_lib]]
+name = "FejesTothP7"
+globs = ["FejesTothP7", "FejesTothP7.+"]
+leanOptions = { autoImplicit = false, relaxedAutoImplicit = false }
+weakLeanArgs = ["-j1"]
