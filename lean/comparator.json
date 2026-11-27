@@ -1,0 +1,18 @@
+{
+  "challenge_module": "RegistryChallenge",
+  "solution_module": "RegistrySolution",
+  "theorem_names": [
+    "FejesTothP7.Paper.thm_1_1_strong_solidity",
+    "FejesTothP7.Paper.cor_1_2_grade_and_order",
+    "FejesTothP7.Paper.sites37_tiling_certification",
+    "FejesTothP7.Paper.isPacking_iff_pairwise_disjoint_balls",
+    "FejesTothP7.Paper.overlaps_iff_balls_inter_nonempty"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

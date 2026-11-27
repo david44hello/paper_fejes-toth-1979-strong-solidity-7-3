@@ -1,8 +1,13 @@
+module
+
 /-
 Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 -/
-import FejesTothP7.Defs.H2
-import Mathlib.Data.Finset.Card
+public import FejesTothP7.Defs.H2
+public import Mathlib.Data.Finset.Card
+
+@[expose] public section
+set_option backward.proofsInPublic true
 
 /-!
 # Circle Packings, Finite Rearrangements, Solidity, and Saturatedness

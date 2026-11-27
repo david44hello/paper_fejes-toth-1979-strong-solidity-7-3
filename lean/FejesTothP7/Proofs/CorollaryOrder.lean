@@ -1,9 +1,13 @@
+module
+
 /-
 Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 -/
-import FejesTothP7.Proofs.TilingMain
-import FejesTothP7.Proofs.ExactIdentity
-import FejesTothP7.Proofs.LocalGeom
+public import FejesTothP7.Proofs.TilingMain
+public import FejesTothP7.Proofs.ExactIdentity
+public import FejesTothP7.Proofs.LocalGeom
+
+@[expose] public section
 
 /-!
 # Grade of Saturatedness `g₇ = 3`, Order of Solidity `k₇ = 1`, and §1 Equivalence

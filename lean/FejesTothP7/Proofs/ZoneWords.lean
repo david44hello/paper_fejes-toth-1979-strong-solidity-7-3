@@ -1,7 +1,11 @@
+module
+
 /-
 Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 -/
-import FejesTothP7.Defs.Tiling
+public import FejesTothP7.Defs.Tiling
+
+@[expose] public section
 
 /-!
 # Combinatorial Properties of the Zone Substitution Words `w_m`

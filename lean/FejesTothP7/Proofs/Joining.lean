@@ -1,7 +1,11 @@
+module
+
 /-
 Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 -/
-import FejesTothP7.Proofs.TipGeom
+public import FejesTothP7.Proofs.TipGeom
+
+@[expose] public section
 
 /-!
 # Good Sets and Joining Lemmas (Section 4)

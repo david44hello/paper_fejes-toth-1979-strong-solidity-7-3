@@ -1,13 +1,18 @@
+module
+
 /-
 Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 -/
-import FejesTothP7.Defs.H2
-import FejesTothP7.Defs.Constants
-import FejesTothP7.Defs.Packing
-import FejesTothP7.Defs.Tiling
-import FejesTothP7.Proofs.Certify
-import FejesTothP7.Proofs.NumericalBounds
-import Mathlib.Topology.Order.Basic
+public import FejesTothP7.Defs.H2
+public import FejesTothP7.Defs.Constants
+public import FejesTothP7.Defs.Packing
+public import FejesTothP7.Defs.Tiling
+public import FejesTothP7.Proofs.Certify
+public import FejesTothP7.Proofs.NumericalBounds
+public import Mathlib.Topology.Order.Basic
+
+@[expose] public section
+set_option backward.proofsInPublic true
 
 /-!
 # Statements of All Claims in the Paper

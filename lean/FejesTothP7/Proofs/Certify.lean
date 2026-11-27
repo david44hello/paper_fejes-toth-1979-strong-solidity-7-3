@@ -1,8 +1,12 @@
+module
+
 /-
 Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 -/
-import FejesTothP7.Proofs.MainTheorem
-import FejesTothP7.Proofs.MetricGap
+public import FejesTothP7.Proofs.MainTheorem
+public import FejesTothP7.Proofs.MetricGap
+
+@[expose] public section
 
 /-!
 # Certification Bridges and Complete Lemma 5.1 Assembly

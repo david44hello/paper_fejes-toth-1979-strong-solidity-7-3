@@ -1,9 +1,13 @@
+module
+
 /-
 Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 -/
-import FejesTothP7.Proofs.TilingMain
-import FejesTothP7.Proofs.Joining
-import FejesTothP7.Proofs.CorollaryOrder
+public import FejesTothP7.Proofs.TilingMain
+public import FejesTothP7.Proofs.Joining
+public import FejesTothP7.Proofs.CorollaryOrder
+
+@[expose] public section
 
 /-!
 # Proof of Theorem 1.1 (Strong Solidity of `{7, 3}`) and Corollary 1.2

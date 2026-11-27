@@ -1,7 +1,11 @@
+module
+
 /-
 Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 -/
-import FejesTothP7.Proofs.LocalGeom
+public import FejesTothP7.Proofs.LocalGeom
+
+@[expose] public section
 
 /-!
 # Tip-Disc Lemma (`lem_3_2_tip_disc`) and Strict Half-Lens Bound (`lem_3_3_half_lens`)

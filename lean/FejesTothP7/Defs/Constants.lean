@@ -1,10 +1,16 @@
+module
+
 /-
 Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 -/
-import Mathlib.Analysis.SpecialFunctions.Arcosh
-import Mathlib.Analysis.SpecialFunctions.Arsinh
-import Mathlib.Analysis.SpecialFunctions.Artanh
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Inverse
+public import FejesTothP7.Defs.H2
+public import Mathlib.Analysis.SpecialFunctions.Arcosh
+public import Mathlib.Analysis.SpecialFunctions.Arsinh
+public import Mathlib.Analysis.SpecialFunctions.Artanh
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Inverse
+
+@[expose] public section
+set_option backward.proofsInPublic true
 
 /-!
 # Geometric Constants for Regular Hyperbolic `{p, 3}` Tilings (`p ≥ 7`)

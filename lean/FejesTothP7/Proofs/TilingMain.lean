@@ -1,7 +1,11 @@
+module
+
 /-
 Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 -/
-import FejesTothP7.Proofs.ZoneConvexity
+public import FejesTothP7.Proofs.ZoneConvexity
+
+@[expose] public section
 
 /-!
 # Global `{3, 7}` Tiling Certification, Rigidity, Lemma 5.1, Lemma 2.1, and Covering Radius `Rc7`

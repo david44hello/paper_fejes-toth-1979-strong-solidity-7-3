@@ -1,8 +1,12 @@
+module
+
 /-
 Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 -/
-import FejesTothP7.Proofs.Delta237Basic
-import FejesTothP7.Proofs.ZoneWords
+public import FejesTothP7.Proofs.Delta237Basic
+public import FejesTothP7.Proofs.ZoneWords
+
+@[expose] public section
 
 /-!
 # Algebraic Zone-Layer Generator for `{3, 7}` in `Delta237`

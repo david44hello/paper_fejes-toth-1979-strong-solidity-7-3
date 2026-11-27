@@ -1,9 +1,14 @@
+module
+
 /-
 Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 -/
-import Mathlib.Analysis.SpecialFunctions.Arcosh
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
-import Mathlib.Topology.MetricSpace.Isometry
+public import Mathlib.Analysis.SpecialFunctions.Arcosh
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
+public import Mathlib.Topology.MetricSpace.Isometry
+
+@[expose] public section
+set_option backward.proofsInPublic true
 
 /-!
 # The Hyperbolic Plane `H2` (Hyperboloid Model)
@@ -22,7 +27,6 @@ noncomputable section
 namespace FejesTothP7
 
 /-- A point of the hyperbolic plane `H2` in the hyperboloid (Lorentz) model. -/
-@[ext]
 structure H2 where
   x : ℝ
   y : ℝ
@@ -31,6 +35,10 @@ structure H2 where
   on_sheet : z ^ 2 - x ^ 2 - y ^ 2 = 1
 
 namespace H2
+
+@[ext]
+lemma ext {p q : H2} (hx : p.x = q.x) (hy : p.y = q.y) (hz : p.z = q.z) : p = q := by
+  cases p; cases q; simp only at hx hy hz; subst hx; subst hy; subst hz; rfl
 
 /-- The Minkowski (Lorentz) pairing `p.z * q.z - p.x * q.x - p.y * q.y`, equal to `cosh d(p, q)`. -/
 def lorentz (p q : H2) : ℝ :=
@@ -328,4 +336,8 @@ def ClosedHalfPlanePos (p q : H2) : Set H2 :=
   {x : H2 | 0 ≤ detH p q x}
 
 end H2
+
+instance instAtLeastTwo2 : Nat.AtLeastTwo 2 := inferInstance
+instance instAtLeastTwo3 : Nat.AtLeastTwo 3 := inferInstance
+
 end FejesTothP7

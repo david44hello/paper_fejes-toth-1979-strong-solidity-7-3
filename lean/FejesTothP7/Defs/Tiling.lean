@@ -1,11 +1,16 @@
+module
+
 /-
 Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 -/
-import FejesTothP7.Defs.H2
-import FejesTothP7.Defs.Constants
-import FejesTothP7.Defs.Packing
-import Mathlib.Algebra.Group.Subgroup.Basic
-import Mathlib.Combinatorics.SimpleGraph.Metric
+public import FejesTothP7.Defs.H2
+public import FejesTothP7.Defs.Constants
+public import FejesTothP7.Defs.Packing
+public import Mathlib.Algebra.Group.Subgroup.Basic
+public import Mathlib.Combinatorics.SimpleGraph.Metric
+
+@[expose] public section
+set_option backward.proofsInPublic true
 
 /-!
 # The Regular `{7, 3}` Tiling and Its Dual `{3, 7}` Triangulation

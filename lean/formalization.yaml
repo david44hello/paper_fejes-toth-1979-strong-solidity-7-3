@@ -1,0 +1,86 @@
+version: v0.4
+project:
+  name: Strong solidity of the regular {7,3} hyperbolic circle packing
+  description: The face-incircles of the regular hyperbolic tiling {7,3} form a strongly solid circle
+    packing of the hyperbolic plane, settling the open p = 7 case of L. Fejes Tóth's 1979 conjecture.
+    The packing has grade of saturatedness 3 and order of solidity 1. Supporting certification and
+    open-disc bridge theorems verify that the concrete (2, 3, 7) reflection-group orbit with the
+    face-inradius is the regular {7,3} face-incircle packing of open hyperbolic discs.
+  authors:
+  - Dave Goel
+  license: Apache-2.0
+  responsible_maintainers:
+  - Dave Goel
+classification:
+  arxiv:
+  - math.MG
+  - math.CO
+  msc2020:
+  - 52C15
+  - 52C20
+  - 51M09
+sources:
+- title: L. Fejes Tóth's strong-solidity conjecture (1979) holds for {7,3}
+  authors:
+  - Dave Goel
+  id: 10.5281/zenodo.24569387
+  type: paper
+  location: https://doi.org/10.5281/zenodo.24569387
+  relationship: formalizes
+status:
+  scope: The five compared statements are Theorem 1.1 (strong solidity), Corollary 1.2 (grade of
+    saturatedness 3 and order of solidity 1), the {7,3}/{3,7} tiling certification for the concrete
+    (2, 3, 7) reflection-group orbit, and the two open-disc packing and overlap bridges. All five—and
+    all 43 mapped claims of the focused paper—rest solely on Lean’s three standard axioms, with no
+    custom axioms, no cited external results, and no computer checks.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+automation:
+  methods:
+  - method: agent
+    tool_setup: AI agents prepared and checked the Lean proof under the author’s direction.
+fidelity:
+  divergences: All five statements match the paper verbatim in the hyperboloid model H2 of constant
+    curvature −1. The open-disc bridges establish equivalence between center-distance inequalities and
+    Metric.ball x r, and the tiling certification proves that the explicit (2, 3, 7) reflection-group
+    orbit sites37 is a transitive, covering, 7-neighbor radius-r7 packing. Equivalent elementary proof
+    routes for internal lemmas are documented in lean/AUDIT_NOTES.md.
+review:
+  status: agent-reviewed
+  reviewers:
+  - Google Gemini
+  notes: An independent Google Gemini check matched the five statements to the paper and verified the
+    Lean proofs. The release passed a clean build from empty, kernel replay, and both standard and
+    paranoid comparisons of the full and five-theorem configurations.
+alignment:
+  namespace: FejesTothP7.Paper
+  statements:
+  - source: Theorem 1.1
+    lean: FejesTothP7.Paper.thm_1_1_strong_solidity
+    module: RegistryChallenge
+    status: proved
+    note: The face-incircles of the regular hyperbolic tiling {7,3} form a strongly solid packing.
+  - source: Corollary 1.2
+    lean: FejesTothP7.Paper.cor_1_2_grade_and_order
+    module: RegistryChallenge
+    status: proved
+    note: The face-incircle packing of {7,3} has grade of saturatedness 3 and order of solidity 1.
+  - source: Section 2.1 tiling certification
+    lean: FejesTothP7.Paper.sites37_tiling_certification
+    module: RegistryChallenge
+    status: proved
+    note: The concrete (2, 3, 7) reflection-group orbit is a transitive, covering, 7-neighbor radius-r7 packing.
+  - source: Section 2.1 open-disc packing bridge
+    lean: FejesTothP7.Paper.isPacking_iff_pairwise_disjoint_balls
+    module: RegistryChallenge
+    status: proved
+    note: Center-distance packing is equivalent to pairwise disjointness of open hyperbolic discs.
+  - source: Section 2.1 open-disc overlap bridge
+    lean: FejesTothP7.Paper.overlaps_iff_balls_inter_nonempty
+    module: RegistryChallenge
+    status: proved
+    note: Center-distance overlap is equivalent to nonempty intersection of open hyperbolic discs.

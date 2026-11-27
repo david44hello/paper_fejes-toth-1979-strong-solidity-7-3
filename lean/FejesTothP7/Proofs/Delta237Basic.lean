@@ -1,10 +1,14 @@
+module
+
 /-
 Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 -/
-import FejesTothP7.Defs.Tiling
-import FejesTothP7.Proofs.H2Basic
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
-import Mathlib.Analysis.Real.Pi.Bounds
+public import FejesTothP7.Defs.Tiling
+public import FejesTothP7.Proofs.H2Basic
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
+public import Mathlib.Analysis.Real.Pi.Bounds
+
+@[expose] public section
 
 /-!
 # Basic Properties of the `(2, 3, 7)` Reflection Group and Local Triangle Geometry

@@ -1,10 +1,14 @@
+module
+
 /-
 Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 -/
-import FejesTothP7.Defs.H2
-import FejesTothP7.Defs.Constants
-import FejesTothP7.Defs.Tiling
-import Mathlib.Topology.Order.Basic
+public import FejesTothP7.Defs.H2
+public import FejesTothP7.Defs.Constants
+public import FejesTothP7.Defs.Tiling
+public import Mathlib.Topology.Order.Basic
+
+@[expose] public section
 
 /-!
 # Exact Trigonometric Identities, Constants, and Tip Distances for `{7, 3}`
